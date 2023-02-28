@@ -119,6 +119,7 @@
       \strng{authorbibnamehash}{533c0969fa78119c1bf71f8d9c3bedf1}
       \strng{authornamehash}{533c0969fa78119c1bf71f8d9c3bedf1}
       \strng{authorfullhash}{533c0969fa78119c1bf71f8d9c3bedf1}
+      \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -126,6 +127,65 @@
       \field{title}{College Algebra}
       \field{year}{1995}
       \field{pages}{32}
+      \range{pages}{1}
+    \endentry
+    \entry{DC95}{book}{}
+      \name{author}{2}{}{%
+        {{hash=720bf8b9c328cdc5372cd512cff920a7}{%
+           family={Larson},
+           familyi={L\bibinitperiod},
+           given={Roland\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6209d6d17a62b538cf06745d0510a8ad}{%
+           family={Hostetler},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {D.C. Health}%
+        {Company.}%
+      }
+      \strng{namehash}{533c0969fa78119c1bf71f8d9c3bedf1}
+      \strng{fullhash}{533c0969fa78119c1bf71f8d9c3bedf1}
+      \strng{bibnamehash}{533c0969fa78119c1bf71f8d9c3bedf1}
+      \strng{authorbibnamehash}{533c0969fa78119c1bf71f8d9c3bedf1}
+      \strng{authornamehash}{533c0969fa78119c1bf71f8d9c3bedf1}
+      \strng{authorfullhash}{533c0969fa78119c1bf71f8d9c3bedf1}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{college algebra}
+      \field{year}{1995}
+      \field{pages}{3}
+      \range{pages}{1}
+    \endentry
+    \entry{C10}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5d7c5a2525564580a8aa04190ae2b822}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Kenneth\bibnamedelima H.},
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {by McGraw-Hill, a business unit of The McGraw-Hill Companies, Inc.,}%
+      }
+      \strng{namehash}{5d7c5a2525564580a8aa04190ae2b822}
+      \strng{fullhash}{5d7c5a2525564580a8aa04190ae2b822}
+      \strng{bibnamehash}{5d7c5a2525564580a8aa04190ae2b822}
+      \strng{authorbibnamehash}{5d7c5a2525564580a8aa04190ae2b822}
+      \strng{authornamehash}{5d7c5a2525564580a8aa04190ae2b822}
+      \strng{authorfullhash}{5d7c5a2525564580a8aa04190ae2b822}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Discrete Mathematics and Its Applications}
+      \field{year}{2012}
+      \field{pages}{334}
       \range{pages}{1}
     \endentry
     \entry{R20}{article}{}
@@ -142,8 +202,8 @@
       \strng{authorbibnamehash}{b156c71a3c8a1a9f18836abfabd81af9}
       \strng{authornamehash}{b156c71a3c8a1a9f18836abfabd81af9}
       \strng{authorfullhash}{b156c71a3c8a1a9f18836abfabd81af9}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Scopus Index Journal}

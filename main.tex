@@ -42,45 +42,46 @@ metallic ratios. In this paper, I will prove some interesting theorems relating 
 defined recursively and integral powers of metallic ratios.
 
 \begin{definition}
-Let $ k $ be a natural number. The terms of metallic ratio of order k sequence is defined recursively by 
+Let $ k $ be a natural number. The terms of metallic ratio of order $k$ sequence is defined recursively by 
 \begin{equation}\label{recursive metallic}
-	 M_{n+2} =kM_{n+1}+M_n 
+	M_{n+2} =kM_{n+1}+M_n,\textnormal{ for } n \geq 1 
 \end{equation}
-for $n \geq 1 $ with initial condition $M_0 = 0, M_1 = 1, M_2 = k$. 
+with initial conditions $M_0 = 0, M_1 = 1, M_2 = k$. 
+\newline 
 
-The terms of the metallic ratio of order k sequence as defined in \eqref{recursive metallic} are given by 
+The terms of the metallic ratio of order $k$ sequence as defined in equation \eqref{recursive metallic} are given by 
 \begin{equation}\label{metallic ratio order k sequence}
 	 0,1, k, k^2 + 1, k^3 + 2k, k^4 + 3k^2 + k, k^5 +4k^3 +k^2 + 2k, k^6 + 5k^4 + k^3 + 5k^2 + k, \ldots
 \end{equation}
 
-\subsection{Metallic ratio of order $k$ }
-Through the recurrence relation defined in \eqref{recursive metallic}, We can solve for explicitly. Using the shift operator, the 
+\subsection{Metallic ratio of order $ k $}
+Through the recurrence relation defined in equation \eqref{recursive metallic}, we can solve for explicitly. Using the shift operator, the 
 recurrence relation yield the quadratic equation $ m^2 - km - 1 = 0 $. The two real roots of this quadratic equation are 
-given by $ m = \dfrac{kx \pm \sqrt{k^2 + 4} }{2}$. The positive value among these two roots is defined as the metallic ratio of order 
+given by $ m = \dfrac{k \pm \sqrt{k^2 + 4} }{2}$. The positive value among these two roots is defined as the metallic ratio of order 
 $ k $ denoted by $ \rho_{k} $. Thus,
 
  \begin{equation}\label{metallic ratio}
-	\rho_{k} = \frac{k+\sqrt{k^2 + 4}}{2}
+	\rho_{k} = \frac{k+\sqrt{k^2 + 4}}{2}.
 \end{equation}
 Since the sum of two roots is $ k $, the other root is
  \begin{equation}\label{other root metallic ratio}
- 	  k - \rho_k = \frac{k - \sqrt{k^2 + 4}}{2}
+ 	  k - \rho_k = \frac{k - \sqrt{k^2 + 4}}{2}.
  \end{equation}
 
 \subsection{Special cases of metallic ratio}
 \begin{enumerate}[label=(\roman*)]
 
-\item If $ k = 1$, then from (\ref{metallic ratio})
+\item If $ k = 1$, then from equation (\ref{metallic ratio})
 \begin{equation}\label{golden ratio}
 	\rho_{1}=\frac{1+\sqrt{5}}{2}
 \end{equation} 
 is called the golden ratio.
-\item If $ k = 2$, then from (\ref{metallic ratio})
+\item If $ k = 2$, then from equation  (\ref{metallic ratio})
 \begin{equation}\label{silver ratio}
 	\rho_{2}=1+\sqrt{2}
 \end{equation} 
 is called the silver ratio.
-\item If $ k = 3$, then from (\ref{metallic ratio})
+\item If $ k = 3$, then from equation (\ref{metallic ratio})
 \begin{equation}\label{bronze ratio}
 	\rho_{3}=\frac{3+\sqrt{13}}{2}
 \end{equation}
@@ -88,237 +89,269 @@ is called the silver ratio.
 \end{enumerate}
 
 \end{definition}
-The numbers give by (\ref{golden ratio}),(\ref{silver ratio}) and (\ref{bronze ratio}) form the metallic ratios of first second and third orders.
-\pagebreak
+The numbers give by equation (\ref{golden ratio}),(\ref{silver ratio}) and (\ref{bronze ratio}) form the metallic ratios of first second and third orders, respectively.
 \begin{lemma}\label{lemma}
-	\textnormal{If} $\rho_{k}= \dfrac{k^2 + 4}{2} $ \textnormal{is the metallic ratio of order} $ k $, \textnormal{then}
+	If $\rho_{k}= \dfrac{k^2 + 4}{2} $ is the metallic ratio of order $ k $, then
 	\begin{center}
 		$ \rho_{k} - \dfrac{1}{\rho_{k}}=k$ 
 	\end{center}
 \end{lemma}	
 \begin{proof}
-	From (\ref{metallic ratio}) and (\ref{other root metallic ratio}) we know that $\rho_{k} = \dfrac{k+\sqrt{k^2+4}}{2}, k - \rho_{k} = \dfrac{k-\sqrt{k^2 + 4}}{2}$ are the two real roots of $ m^2 - km -1 = 0 $. Now taking reciprocal of $ \rho_{k} $ we get 
+	From equation (\ref{metallic ratio}) and (\ref{other root metallic ratio}), we know that $\rho_{k} = \dfrac{k+\sqrt{k^2+4}}{2}$ and $k - \rho_{k} = \dfrac{k-\sqrt{k^2 + 4}}{2}$ are the two real roots of $ m^2 - km -1 = 0 $. We have 
 	\begin{align*}
 		\frac{1}{\rho_k} &= \frac{1 }{\dfrac{k+\sqrt{k^2 +4}}{2}} \\
 		&=\frac{2}{k + \sqrt{k^2 + 4}} \\
-		&=\frac{2}{k + \sqrt{k^2 + 4}} \times \frac{k-\sqrt{k^2 + 4}}{k-\sqrt{k^2 + 4}} \\
+		&=\frac{2(k-\sqrt{k^2 + 4)}}{(k + \sqrt{k^2 + 4})(k-\sqrt{k^2 + 4)} } \\
 		&= \frac{2(k - \sqrt{k^2 + 4})}{k^2-(k^2+4)} \\
 		&= \frac{2(k - \sqrt{k^2 + 4})}{k^2 - k^2 -4}\\
 		&= \frac{2(k - \sqrt{k^2 + 4})}{-4}\\
 		&= \frac{k - \sqrt{k^2 + 4}}{-2}\\
-		&= - \left (\dfrac{k-\sqrt{k^2 + 4}}{2} \right)\\
-		&= -(k-\rho) \\
-		&= \rho_k-k\\
+		&= - \dfrac{k-\sqrt{k^2 + 4}}{2} \\
+		&= -(k-\rho_k) \\
+		&= \rho_k-k,
 	\end{align*}
-Hence $\rho_k-\dfrac{1}{\rho_k}=k$. This completes the proof.
+hence 
+
+\begin{align*}
+	\frac{1}{\rho_k}+k&=\rho_k \\
+	k &= \rho_k - \frac{1}{k} 
+\end{align*}
+
 \end{proof}
 %-------------------------------------------
 \section{Preliminary}
-\subsection{Properties of Real number (\cite{MIDC14})}
-Let $a, b,$ and $c$ represent real numbers.
-\begin{enumerate}
-\item \textbf{Closure Properties}
+\subsection*{Properties of real number (\cite{MIDC14}) }
 
+\indent Let $a, b,$ and $c$ represent real numbers.
+\begin{enumerate}
+\item Closure Properties
 \begin{align*}
 a+b \quad &\text{is a real number.}\\
 ab \quad &\text{is a real number.}
 \end{align*}
-
-\item \textbf{Commutative Properties}
-
+\item Commutative Properties
 \begin{align*}
-a+b &= b+ a\\
-	ab &= ba
+a+b &= b+ a.\\
+	ab &= ba.
 \end{align*}
 
-\item \textbf{Associative Properties}
-
+\item Associative Properties
 \begin{align*}
-	( a + b ) + c &= ( a + b ) + c \\
-	(ab)c &= a(bc)
+	( a + b ) + c &= ( a + b ) + c. \\
+	(ab)c &= a(bc).
 \end{align*}
 
-\item \textbf{Identity Properties}
+\item Identity Properties
 
 There exist a unique real number $0$ such that
 \begin{align*}
-	 a + 0 = a. \quad \text{and} \quad 0 + a = a.
+	 a + 0 = a \quad \text{and} \quad 0 + a = a.
 \end{align*}
 
 There exist a unique real number $1$ such that
 \begin{align*}
-	 a \cdot 1 = a. \quad \text{and} \quad 1 \cdot a = a.
+	 a \cdot 1 = a \quad \text{and} \quad 1 \cdot a = a.
 \end{align*}
 
-\item \textbf{Inverse Properties}
+\item Inverse Properties
 
 There exist a unique real number $-a$ such that
 \begin{align*}
-	 a + (-a) = 0. \quad \text{and} \quad -a + a = 0.
+	 a + (-a) = 0 \quad \text{and} \quad -a + a = 0.
 \end{align*}
 
-if $a \neq 0$, there exists a  unique real number $\dfrac{1}{a}$ such that
+if $a \neq 0$, there exists a  unique real numbers $\dfrac{1}{a}$ such that
 \begin{align*}
-	 a \cdot \dfrac{1}{a} = 1. \quad \text{and} \quad \dfrac{1}{a} \cdot a = 1.
+	 a \cdot \dfrac{1}{a} = 1 \quad \text{and} \quad \dfrac{1}{a} \cdot a = 1.
 \end{align*}
 
-\item \textbf{Distributive Properties}
+\item Distributive Properties
 \begin{align*}
 	a(b+c) &= ab + ac\\
 	a(b-c) &= ab - ac
 \end{align*}
 \end{enumerate}
-\begin{theorem}[Fraction Properties \cite{ARE08}]
-	\textnormal{For all real number} $a, b, c, d,$ \textnormal{and} $k$ \textnormal{(division by 0 excluded)}:
-\begin{enumerate} 
-	\item $\dfrac{a}{b} = \dfrac{c}{d} \hspace*{0.5cm} \textnormal{if and only if} \hspace*{0.2cm} ad = bc$.
-	\item $\dfrac{ka}{kb} = \dfrac{a}{b}$.
-	\item $\dfrac{a}{b} \cdot \dfrac{c}{d} = \dfrac{ac}{bd}$.
-	\item $\dfrac{a}{b} \div \dfrac{c}{d} = \dfrac{a}{b} \cdot \dfrac{d}{c}$.
-	\item $\dfrac{a}{b} + \dfrac{c}{b} = \dfrac{a + c}{b}$.
-	\item $\dfrac{a}{b} - \dfrac{c}{b} = \dfrac{a - c}{b}$.
-	\item $\dfrac{a}{b} + \dfrac{c}{d} = \dfrac{ad + bc}{bd}$.
-\end{enumerate}
-\end{theorem}
+\noindent\textbf{Properties of fractions(\cite{ARE08})}
+\newline
 
-\begin{theorem}
-\textnormal{\textbf{Properties of Integer Exponents(\cite{ARE08})}}.\\[3 mm] \textnormal{For} $n$ \textnormal{and} $m$ \textnormal{integers and} $a$ \textnormal{and} $b$ \textnormal{real numbers:}
+Let $a, b, c$ and $d$ be real numbers, variables or algebraic expressions such that $b \neq 0$ and $d \neq 0$.
+\begin{enumerate} 
+	\item Equivalent fractions:
+	\begin{equation*}
+		\frac{a}{b} = \frac{c}{d} \hspace*{0.5cm} \textnormal{if and only if} \hspace*{0.2cm} ad = bc.
+	\end{equation*}
+	\item Rules of signs:
+	\begin{equation*}
+		-\frac{a}{b} = \frac{-a}{b} = \frac{a}{-b}\quad \textnormal{ and } \quad \frac{-a}{-b} = \frac{a}{b}.
+	\end{equation*}
+	\item Generate equivalent fractions:
+	\begin{equation*}
+		\frac{a}{b} = \frac{ac}{bc}, \quad c \neq 0.
+	\end{equation*}
+	\item Add or subtract with like denominators: 
+	\begin{equation*}
+		\frac{a}{b} \pm \frac{c}{b} = \frac{a \pm c}{b}.
+	\end{equation*}	
+	\item Add or subtract with unlike denominators:
+	\begin{equation*}
+		\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}.
+	\end{equation*}
+	\item Divide fractions:
+	\begin{equation*}
+		\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c},\quad c \neq 0.
+	\end{equation*}
+\end{enumerate}
+
+\subsection*{Properties of integer exponents (\cite{ARE08})} For $n$ and $m$ be integers and $a$ and $b$ are real numbers.
 \begin{enumerate}
 	\item $a^ma^n=a^{m+n}$.
 	\item $(a^n)^m=a^{mn}$.
 	\item $(ab)^m=a^mb^m$.
-	\item $\bigg(\dfrac{a}{b}\bigg)^m =\dfrac{a^m}{b^m} \quad\quad b\neq0$.
+	\item $\bigg(\dfrac{a}{b}\bigg)^m =\dfrac{a^m}{b^m},b\neq0$.
 	\item $\dfrac{a^m}{a^n} = \begin{cases} \phantom{-} a^{m-n}& 
-			 \\ \dfrac{1}{a^{n-m}} &  \quad \quad a \neq 0 \end{cases}$.
+			 \\ \dfrac{1}{a^{n-m}},a \neq 0. \end{cases}$\\
 \end{enumerate}
-\end{theorem}
 
-\subsubsection*{Special Products (\cite{EP95})}
+\subsubsection*{Special products (\cite{EP95})}
 Let $a$ and $b$ be real numbers, variables, or algebraic expressions.
 \begin{enumerate}
-	\item \textbf{Sum and Difference of Same Terms} \\
-	\hspace*{0.4cm} $(a+b)(a-b) = a^2-b^2$
-	\item \textbf{Square of a Binomial} \\
-	\hspace*{0.4cm} $(a+b)^2 = a^2 +2ab+b^2$ \\
-	\hspace*{0.4cm} $(a-b)^2 = a^2 -2ab+b^2$
-	\item \textbf{Cube of Binomial} \\
-	\hspace*{0.4cm} $(a+b)^3 = a^3+3a^2b+3ab^2+b^3$ \\
-	\hspace*{0.4cm} $(a-b)^3 = a^3-3a^2b+3ab^2-b^3$
+	\item Sum and difference of same terms 
+	 $$(a+b)(a-b) = a^2-b^2.$$
+	\item Square of a Binomial 
+	 $$(a+b)^2 = a^2 +2ab+b^2.$$ 
+	 $$(a-b)^2 = a^2 -2ab+b^2.$$
+	\item Cube of Binomial 
+	 $$(a+b)^3 = a^3+3a^2b+3ab^2+b^3.$$ 
+	 $$(a-b)^3 = a^3-3a^2b+3ab^2-b^3.$$
 \end{enumerate}
 
-\subsection{Quadratic formula}
-	If $ ax^2 +bx + c = 0$, then 
+\subsection*{Quadratic formula}
+\begin{theorem}[\cite{DC95}]
+	If $ p(x) = ax^2 +bx + c = 0, a \neq 0 $ and $ 0 \leq b^2 - 4ac $. Then
+	 
+	The two real roots of  p are 
 \begin{equation*}\label{quadratic formula}
-	x= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+	x= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
 \end{equation*}
-\subsection{Principle of Strong Mathematical Induction}
-Let $P(n)$ be a property that is defined for integer $n$, and let $a$ and $b$ be fixed integers with $a \leq b$. Suppose the following two statements are true:
-\begin{enumerate}
-\item $P(a), P(a+1), \ldots, and P(b)$ are all true. \textbf{(basis step)}
-\item For any integer $k \geq b$, if $P(i)$ is true for all integer $i$ from a through $k$ then $P(k+1)$ is true \textbf{(inductive step)}
-\end{enumerate}
-Then the statement
-\begin{center}
-for all integer $n \geq a, \quad P(n)$	
-\end{center}
-is true. (The supposition that $P(i)$ is true for all integers $i$ from $a$ through $k$ is called the \textbf{inductive hypothesis}. Another way to state the inductive hypothesis is to say that $P(a), P(a+1), \ldots, P(k)$ are all true.)
-
+\end{theorem}
+\subsection*{Principle of Strong Mathematical Induction}
+\begin{theorem}[\cite{C10}] 
+	To prove that $P(n)$ is true for all positive integer $n$, Where $P(n)$ is a propositional function, we complete two steps:
+	\newline
+	\indent Basis step : We verify that the proposition $P(1)$ is true.
+	
+	Inductive step: We show that the conditional statement  $[ P(1) \land P(2) \land \ldots ,P(k)]  \to P(k+1)$ is true for all positive integers $k$.
+\end{theorem}
 \section{Main Results}
-.
-\begin{center}	
-\subsection*{RELATION WITH RESPECT TO GOLDEN RAITO}
-\end{center}
-We will consider $ k = 1 $ in \eqref{recursive metallic} and \eqref{metallic ratio order k sequence}. Then the recurrence relation would become 
+\par
+We will consider $ k = 1 $ in equation \eqref{recursive metallic} and \eqref{metallic ratio order k sequence}. Then the recurrence relation would become 
 \begin{equation}\label{k = 1 in reccurence}
-	 M_{n+1} = M_{n+1} + M_n.
+	 M_{n+2} = M_{n+1} + M_n, \textnormal{ for } n \geq 1
 \end{equation}  
-From \eqref{metallic ratio order k sequence} we get Fibonacci sequence whose terms are given by 
+where $M_0=0, M_1=1, M_2=1.$
+\newline
+
+\noindent From equation \eqref{metallic ratio order k sequence} we get Fibonacci sequence whose terms are given by 
 \begin{center}
-	$0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,\ldots $ 
+	$0,1,1,2,3,5,8,13,21,34, 55,89,144,233,377,610,\ldots $ 
 \end{center}
 
 It is well known that (see \cite{R20}) the ratio of successive terms of the Fibonacci sequence approaches the golden ratio
 $ \rho_{1} = \varphi = \dfrac{1+\sqrt{5}}{2}$. We will now prove the following theorem.
 \begin{theorem}\label{golden ratio theorem}
-\textnormal{If} $\bigl\{ M_n \bigr\}$ \textnormal{is the Fibonacci sequence as defined in \eqref{k = 1 in reccurence} then for any positive integer} $ n $ \textnormal{we have} 
+If $\bigl\{ M_n \bigr\}$ is the Fibonacci sequence as defined on equation \eqref{k = 1 in reccurence}, then for any positive integer $ n $, we have
 \begin{equation}\label{golden ratio recursive}
 	\varphi^n + \left(-\frac{1}{\varphi}\right)^n = M_{n-1} + M_{n+1}.  
 \end{equation}
 \end{theorem}
 
-\begin{proof}
-$\varphi^n + \left(-\dfrac{1}{\varphi}\right)^n = M_{n-1} + M_{n+1} $. for all $n \in \mathbb{N}$
+\begin{proof} We prove by using principle of strong  mathematical induction on $n \in \mathbb{N}$. 
 
-\quad Let P$(n):\varphi^n + \left(-\dfrac{1}{\varphi}\right)^n = M_{n-1} + M_{n+1}$. 
+\quad Let $P(n):\varphi^n + \left(-\dfrac{1}{\varphi}\right)^n = M_{n-1} + M_{n+1}$. 
+\begin{enumerate}[label=(\roman*),leftmargin = 1.5cm]
+	\item To show  that $P(1)$ is true, that is
 
-\quad (i)\quad Show P($1$) is true 
-
-\quad \quad \quad That is $\varphi - \dfrac{1}{\varphi} = M_{0} + M_{2}$ 
-
-\quad \quad \quad Consider
-\begin{align*}
- 	\varphi - \dfrac{1}{\varphi} &= \rho_1 - \dfrac{1}{\rho_1}\\
- \end{align*}
+ $$\varphi - \dfrac{1}{\varphi} = M_{0} + M_{2}.$$ 
  
-\quad \quad \quad Since \eqref{lemma} from lemma.\quad $\rho_k-\dfrac{1}{\rho_k}=k$. Thus we obtain $\rho_1-\dfrac{1}{\rho_1}=1$.
- \begin{align*}
+ From Lemma \ref{lemma} and $k=1$, we have $\rho_1 - \dfrac{1}{\rho_1} =1 $.
+ 
+ Since $ \varphi = \rho_1$ and $M_0=0, M_2=1 $then 
+  \begin{align*}
  	\varphi - \dfrac{1}{\varphi} &= 1\\
- 	&= o + 1\\
- 	&= M_{0} + M_{2}
+ 	&= 0 + 1\\
+ 	&= M_{0} + M_{2}.
  \end{align*}
+%  and
  
-\quad \quad \quad $\therefore$ P($1$) is true
+%  \begin{align*}
+%  	\varphi + \frac{1}{\varphi^2} &= \left(\frac{1+\sqrt{5}}{2}\right)^2 + \frac{1}{\left(\dfrac{1+\sqrt{5}}{2}\right)^2}\\
+%  	&= \frac{(1+\sqrt{5})^2}{2^2} + \frac{1}{\dfrac{(1+\sqrt{5})^2}{2^2}}\\
+%  	&= \frac{1+2\sqrt{5}+(\sqrt{5})^2}{4} + \frac{1}{\dfrac{1+2\sqrt{5}+(\sqrt{5})^2}{4}}\\
+%  	&= \frac{1+2\sqrt{5}+5}{4} + \frac{1}{\dfrac{1+2\sqrt{5}+5}{4}}\\
+%  	&= \frac{6+2\sqrt{5}}{4} + \frac{1}{\dfrac{6+2\sqrt{5}}{4}}\\
+%  	&= \frac{2(3+\sqrt{5})}{4} + \frac{1}{\dfrac{2(3+\sqrt{5})}{4}}\\
+%  	&= \frac{3+\sqrt{5}}{2} + \frac{1}{\dfrac{3+\sqrt{5}}{2}}\\
+%  	&= \frac{3+\sqrt{5}}{2} + \frac{2}{3+\sqrt{5}}\\
+%  	&= \frac{3^2+2(3)\sqrt{5}+(\sqrt{5})^2}{2(3+\sqrt{5})} + \frac{4}{2(3+\sqrt{5})}\\
+%  	&= \frac{9+6\sqrt{5}+5}{2(3+\sqrt{5})} + \frac{4}{2(3+\sqrt{5})}\\
+%  	&= \frac{9+6\sqrt{5}+5+4}{2(3+\sqrt{5})} \\
+%  	&= \frac{18+6\sqrt{5}}{2(3+\sqrt{5})} \\
+%  	&= \frac{6(3+\sqrt{5})}{2(3+\sqrt{5})} \\
+%  	&= 3 \\
+%  	&= 1 + 2 \\
+%  	&= M_1 + M_3,
+%  \end{align*}
  
-\quad (ii)\quad Assume P($r-1$) and P($r$) is true
+ 
+ Thus  $P(1)$ is true.
+ 
+ \item For $r \geq 1$. We assume that $P(r-1)$ and $P(r)$ are true, that is
+ \begin{equation*}
+	\varphi^{r-1} + \left(-\dfrac{1}{\varphi}\right)^{r-1} = M_{r-2} + M_{r},  
+\end{equation*}
+and 
+\begin{equation*}
+	\varphi^{r} + \left(-\dfrac{1}{\varphi}\right)^{r} = M_{r-1} + M_{r+1},
+\end{equation*}
 
-\quad \quad \quad That is 
-\begin{align*}
-	\varphi^{r-1} + \left(-\dfrac{1}{\varphi}\right)^{r-1} &= M_{r-2} + M_{r} \quad, \\
-	\varphi^{r} + \left(-\dfrac{1}{\varphi}\right)^{r} &= M_{r-1} + M_{r+1}
-\end{align*}
-
-\quad \quad \quad Show P($r+1$) is true
- 
-\quad \quad \quad That is show 
- 
-$$ \varphi^{r+1} + \left(-\dfrac{1}{\varphi}\right)^{r+1}= M_{r} + M_{r+2} $$
-
-\quad \quad \quad Consider
-\begin{align*}
+To show that $P(r+1)$ is true, that is
+$$ \varphi^{r+1} + \left(-\dfrac{1}{\varphi}\right)^{r+1}= M_{r} + M_{r+2}. $$  
+ Consider
+ \begin{align*}
 	M_{r} + M_{r+2} &= M_{r-1} + M_{r-2} + M_{r+1} + M_r \\
 	&= M_{r-2} + M_r + M_{r-1} + M_{r+1} \\
 	&= \varphi^{r-1} + \left(-\dfrac{1}{\varphi}\right)^{r-1} +\varphi^{r} + \left(-\dfrac{1}{\varphi}\right)^{r} \\
 	&= \varphi^{r-1} + \varphi^{r} + \left(-\dfrac{1}{\varphi}\right)^{r-1} + \left(-\dfrac{1}{\varphi}\right)^{r} \\
+%	&= \varphi^{r+1}\varphi^{-2} + \varphi^{r+1}\varphi^{-1} + \left(-\dfrac{1}{\varphi}\right)^{r+1}\left(-\dfrac{1}{\varphi}\right)^{-2} + \left(-\dfrac{1}{\varphi}\right)^{r+1}\left(-\dfrac{1}{\varphi}\right)^{-1} \\
 	&= \varphi^{r+1}(\varphi^{-2} + \varphi^{-1}) + \left(-\frac{1}{\varphi}\right)^{r+1} \left[ \left(-\frac{1}{\varphi}\right)^{-2} + \left(-\frac{1}{\varphi}\right)^{-1}\right] \\
-	&= \varphi^{r+1} \left(\frac{1}{\varphi^2} + \frac{1}{\varphi}\right) + \left(-\frac{1}{\varphi}\right)^{r+1}[(-\varphi^2)+(-\varphi)] \\
-	&= \varphi^{r+1}\left(\frac{1+\varphi}{\varphi^2}\right)+\left(-\frac{1}{\varphi}\right)^{r+1}(\varphi^2-\varphi)
+	&= \varphi^{r+1} \left(\frac{1}{\varphi^2} + \frac{1}{\varphi}\right) + \left(-\frac{1}{\varphi}\right)^{r+1}(\varphi^2-\varphi) \\
+	&= \varphi^{r+1} \cdot \frac{1+\varphi}{\varphi^2}+\left(-\frac{1}{\varphi}\right)^{r+1}(\varphi^2-\varphi).
 \end{align*}
-
-\quad \quad \quad Since $\varphi$ is the root of $m^2 -m -1 =0$. Thus $\varphi^2-\varphi-1=0$.
- 
-\quad \quad \quad  We obtain $\varphi^2=1+\varphi$. and $\varphi^2-\varphi=1$.
- 
+Since $\varphi$ is the root of $m^2 -m -1 =0$, we obtain $\varphi^2-\varphi-1=0$, then $\varphi^2 = \varphi + 1$, thus
  \begin{align*}
- M_{r} + M_{r+2} &= \varphi^{r+1}\left(\frac{\varphi^2}{\varphi^2}\right)+\left(-\frac{1}{\varphi}\right)^{r+1}\\
- &= \varphi^{r+1}+\left(-\frac{1}{\varphi}\right)^{r+1}
+ M_{r} + M_{r+2} &= \varphi^{r+1} \cdot \frac{1+\varphi}{\varphi + 1}+\left(-\frac{1}{\varphi}\right)^{r+1}(\varphi + 1-\varphi)\\
+ &= \varphi^{r+1}+\left(-\frac{1}{\varphi}\right)^{r+1}.
  \end{align*}	
  
- \quad \quad \quad $\therefore$ P($r+1$) is true.
+ Thus $P(r+1)$ is true.
  
- \quad \quad \quad So by strong mathematical induction principle $\varphi^n + \left(-\dfrac{1}{\varphi}\right)^n = M_{n-1} + M_{n+1} $ 
- 
- \quad \quad \quad hold for all $n \in \mathbb{N}$.
+By principle of strong mathematical induction, we obtain 
+\begin{center}
+$\varphi^n + \left(-\dfrac{1}{\varphi}\right)^n = M_{n-1} + M_{n+1} $, for all $n \in \mathbb{N}$.
+\end{center}
+\end{enumerate}
 \end{proof}
 
-\begin{center}
-\subsection*{RELATION WITH RESPECT TO SILVER RATIO}
-\end{center}
-
-We will consider $ k = 2 $ in \eqref{recursive metallic} and \eqref{metallic ratio order k sequence}. Then the recurrence relation would become 
+\par
+\noindent We will consider $ k = 2 $ in equation \eqref{recursive metallic} and \eqref{metallic ratio order k sequence}. Then the recurrence relation would become 
 \begin{equation}\label{k = 2 in reccurence}
-	 M_{n+1} = 2M_{n+1} + M_n.
+	 M_{n+2} = 2M_{n+1} + M_n.
+	 \textnormal{ for } n \geq 1
 \end{equation}  
-From \eqref{metallic ratio order k sequence} we get Fibonacci sequence whose terms are given by 
+where $M_0=0, M_1=1, M_2=2.$
+\newline
+
+From equation \eqref{metallic ratio order k sequence} we get sequence whose terms are given by 
 \begin{center}
 	$0,1,2,5,12,29,70,169,408,985,2378,\ldots $ 
 \end{center}
@@ -326,175 +359,166 @@ From \eqref{metallic ratio order k sequence} we get Fibonacci sequence whose ter
 It can be show that (see \cite{R20}) the ratio of successive terms of this sequence approaches the silver ratio
 $ \rho_{2} = \lambda = 1 + \sqrt{2} $. We will now prove the following theorem.
 \begin{theorem}\label{silver ratio theorem}
-\textnormal{If} $\bigl\{ M_n \bigr\}$ \textnormal{is the Fibonacci sequence as defined in \eqref{k = 2 in reccurence} in reccurence then for any positive integer} $ n $ \textnormal{we have} 
+If $\bigl\{ M_n \bigr\}$ is the sequence as defined on equation \eqref{k = 2 in reccurence}, then for any positive integer $ n $, we have
 \begin{equation}\label{silver ratio recursive}
 	 \lambda^n + \left(-\frac{1}{\lambda}\right)^n = M_{n-1} + M_{n+1}.  
 \end{equation}
 \end{theorem}
 
 \begin{proof}
-$\lambda^n + \left(-\dfrac{1}{\lambda}\right)^n = M_{n-1} + M_{n+1}$. for all $n \in \mathbb{N}$
+We prove by using principle of strong mathematical induction on $n \in \mathbb{N}.$
 
-\quad Let P$(n):\lambda^n + \left(-\dfrac{1}{\lambda}\right)^n = M_{n-1} + M_{n+1}$. 
+\quad Let $P(n):\lambda^n + \left(-\dfrac{1}{\lambda}\right)^n = M_{n-1} + M_{n+1}$. 
+\begin{enumerate}[label=(\roman*),leftmargin = 1.5cm]
+	\item To show  that $P(1)$ is true, that is 
+	$$\lambda - \dfrac{1}{\lambda} = M_{0} + M_{2}.$$
 
-\quad (i)\quad Show P($1$) is true 
-
-\quad \quad \quad That is $\lambda - \dfrac{1}{\lambda} = M_{0} + M_{2}$ 
-
-\quad \quad \quad Consider
-\begin{align*}
- 	\lambda - \dfrac{1}{\lambda} &= \rho_2 - \dfrac{1}{\rho_2}\\
- \end{align*}
+ From Lemma \ref{lemma} and $k=2$, we have $\rho_2 - \dfrac{1}{\rho_2} =2. $
  
-\quad \quad \quad Since \eqref{lemma} from lemma.\quad $\rho_k-\dfrac{1}{\rho_k}=k$. Thus we obtain $\rho_2-\dfrac{1}{\rho_2}=2$.
- \begin{align*}
+ Since $ \lambda = \rho_2$ and $M_0=0, M_2=2,$ then 
+  \begin{align*}
  	\lambda - \dfrac{1}{\lambda} &= 2\\
- 	&= o + 2\\
- 	&= M_{0} + M_{2}
+ 	&= 0 + 2\\
+ 	&= M_{0} + M_{2},
  \end{align*}
+ thus  $P(1)$  is true.
  
-\quad \quad \quad $\therefore$ P($1$) is true
+ \item For $r \geq 1$. We assume that $P(r-1)$ and $P(r)$ are true, that is
+ \begin{equation*}
+ 	\lambda^{r-1} + \left(-\dfrac{1}{\lambda}\right)^{r-1} = M_{r-2} + M_{r}, 
+ \end{equation*}
  
-\quad (ii)\quad Assume P($r-1$) and P($r$) is true
+ and 
+\begin{equation*}
+	\lambda^{r} + \left(-\dfrac{1}{\lambda}\right)^{r} = M_{r-1} + M_{r+1},
+\end{equation*}
 
-\quad \quad \quad That is 
-\begin{align*}
-	\lambda^{r-1} + \left(-\dfrac{1}{\lambda}\right)^{r-1} &= M_{r-2} + M_{r} \quad, \\
-	\lambda^{r} + \left(-\dfrac{1}{\lambda}\right)^{r} &= M_{r-1} + M_{r+1}
-\end{align*}
+respectively.
 
-\quad \quad \quad Show P($r+1$) is true
- 
-\quad \quad \quad That is show 
- 
-$$ \lambda^{r+1} + \left(-\dfrac{1}{\lambda}\right)^{r+1}= M_{r} + M_{r+2} $$
-
-\quad \quad \quad Consider
-\begin{align*}
-	M_{r} + M_{r+2} &= 2M_{r-1} + M_{r-2} + 2M_{r+1} + M_r \\
-	&= M_{r-2} + M_r + 2M_{r-1} + 2M_{r+1} \\ 
-	&= M_{r-2} + M_r + 2(M_{r-1} + M_{r+1}) \\
-	&= \lambda^{r-1} + \left(-\dfrac{1}{\lambda}\right)^{r-1} +2\left[\lambda^{r} + \left(-\dfrac{1}{\lambda}\right)^{r}\right] \\
-	&= \lambda^{r-1} + \left(-\dfrac{1}{\lambda}\right)^{r-1} +2\lambda^{r} + 2\left(-\dfrac{1}{\lambda}\right)^{r}\ \\
-	&= \lambda^{r-1}+2\lambda^{r}  + \left(-\dfrac{1}{\lambda}\right)^{r-1} + 2\left(-\dfrac{1}{\lambda}\right)^{r}\ \\
-	&= \lambda^{r+1}(\lambda^{-2} + 2\lambda^{-1}) + \left(-\frac{1}{\lambda}\right)^{r+1} \left[ \left(-\frac{1}{\lambda}\right)^{-2} + 2\left(-\frac{1}{\lambda}\right)^{-1}\right] \\
-	&= \lambda^{r+1} \left(\frac{1}{\lambda^2} + \frac{2}{\lambda}\right) + \left(-\frac{1}{\lambda}\right)^{r+1}[(-\lambda^2)+2(-\lambda)] \\
-	&= \lambda^{r+1}\left(\frac{1+2\lambda}{\lambda^2}\right)+\left(-\frac{1}{\lambda}\right)^{r+1}(\lambda^2-2\lambda)
-\end{align*}
-
-\quad \quad \quad Since $\lambda$ is the root of $m^2 -2m -1 =0$. Thus $\lambda^2-2\lambda-1=0$.
- 
-\quad \quad \quad  We obtain $\lambda^2=1+2\lambda$. and $\lambda^2-2\lambda=1$.
- 
+To show that $P(r+1$) is true, that is
+$$ \lambda^{r+1} + \left(-\dfrac{1}{\lambda}\right)^{r+1}= M_{r} + M_{r+2}. $$  
+ Consider
  \begin{align*}
- M_{r} + M_{r+2} &= \lambda^{r+1}\left(\frac{\lambda^2}{\lambda^2}\right)+\left(-\frac{1}{\lambda}\right)^{r+1} \\
- &= \lambda^{r+1}+\left(-\frac{1}{\lambda}\right)^{r+1}
+	M_{r} + M_{r+2} &= 2M_{r-1} + M_{r-2} + 2M_{r+1} + M_r \\
+	&= M_{r-2} + M_r + 2M_{r-1} + 2M_{r+1} \\
+	&= M_{r-2} + M_r + 2(M_{r-1} + M_{r+1}) \\
+	&= \lambda^{r-1} + \left(-\dfrac{1}{\lambda}\right)^{r-1} +2\left[\lambda^{r} + \left(-\dfrac{1}{\lambda}\right)^{r} \right]\\
+	&= \lambda^{r-1} + \left(-\dfrac{1}{\lambda}\right)^{r-1} +2\lambda^{r} + 2\left(-\dfrac{1}{\lambda}\right)^{r} \\
+	&= \lambda^{r-1} + 2\lambda^{r} + \left(-\dfrac{1}{\lambda}\right)^{r-1} + 2\left(-\dfrac{1}{\lambda}\right)^{r} \\
+%	&= \varphi^{r+1}\varphi^{-2} + \varphi^{r+1}\varphi^{-1} + \left(-\dfrac{1}{\varphi}\right)^{r+1}\left(-\dfrac{1}{\varphi}\right)^{-2} + \left(-\dfrac{1}{\varphi}\right)^{r+1}\left(-\dfrac{1}{\varphi}\right)^{-1} \\
+	&= \lambda^{r+1}(\lambda^{-2} + 2\lambda^{-1}) + \left(-\frac{1}{\lambda}\right)^{r+1} \left[ \left(-\frac{1}{\lambda}\right)^{-2} + 2\left(-\frac{1}{\lambda}\right)^{-1}\right] \\
+	&= \lambda^{r+1} \left(\frac{1}{\lambda^2} + \frac{2}{\lambda}\right) + \left(-\frac{1}{\lambda}\right)^{r+1}(\lambda^2-2\lambda) \\
+	&= \lambda^{r+1} \cdot \frac{1+2\lambda}{\lambda^2}+\left(-\frac{1}{\lambda}\right)^{r+1}(\lambda^2-2\lambda).
+\end{align*}
+
+Since $\lambda$ is the root of $m^2 -2m -1 =0$, we obtain $\lambda^2-2\lambda-1=0$, then $\lambda^2 = 2\lambda + 1$, thus
+
+ \begin{align*}
+ M_{r} + M_{r+2} &= \lambda^{r+1} \cdot \frac{1+2\lambda}{2\lambda+1}+\left(-\frac{1}{\lambda}\right)^{r+1}(2\lambda+1-2\lambda)\\
+ &= \lambda^{r+1}+\left(-\frac{1}{\lambda}\right)^{r+1}.
  \end{align*}	
  
- \quad \quad \quad $\therefore$ P($r+1$) is true.
  
- \quad \quad \quad So by strong mathematical induction principle $\lambda^n + \left(-\dfrac{1}{\lambda}\right)^n = M_{n-1} + M_{n+1}$. 
- 
- \quad \quad \quad hold for all $n \in \mathbb{N}$.
+ Thus $P(r+1)$ is true.
+
+By principle of strong mathematical induction, we obtain
+
+\begin{center}
+$\lambda^n + \left(-\dfrac{1}{\lambda}\right)^n = M_{n-1} + M_{n+1} $, for all $n \in \mathbb{N}$.
+\end{center}
+\end{enumerate}
 \end{proof}
-
-\begin{center}
-\subsection*{RELATION WITH RESPECT TO BRONZE RATIO}
-\end{center}
-We will consider $ k = 3 $ in \eqref{recursive metallic} and \eqref{metallic ratio order k sequence}. Then the recurrence relation would become 
+\noindent We will consider $ k = 3 $ in equation \eqref{recursive metallic} and \eqref{metallic ratio order k sequence}. Then the recurrence relation would become 
 \begin{equation}\label{k = 3 in reccurence}
-	 M_{n+1} = 3M_{n+1} + M_n.
+	 M_{n+2} = 3M_{n+1} + M_n.
+	 \textnormal{ for } n \geq 1
 \end{equation}  
-From \eqref{metallic ratio order k sequence} we get Fibonacci sequence whose terms are given by 
+where $M_0=0, M_1=1, M_2=3.$
+\newline
+
+From equation \eqref{metallic ratio order k sequence} we get sequence whose terms are given by 
 \begin{center}
-	$0,1,3,10,33,109,360,1189,3927,12970,\ldots $ 
+	$0,1,3,10,33,109,360,1189,3927,12970,\ldots  $ 
 \end{center}
 
-It can be show that (see \cite{R20}) the ratio of successive terms of this sequence approaches the bronze ratio
-$ \rho_{3} = \mu = \dfrac{3 + \sqrt{13}}{2}$. We will now prove the following theorem.
+It can be show that (see \cite{R20}) the ratio of successive terms of this sequence approaches the silver ratio
+$\rho_{3} = \mu = \dfrac{3 + \sqrt{13}}{2}$. We will now prove the following theorem.
 \begin{theorem}\label{bronze ratio theorem}
-\textnormal{If} $\bigl\{ M_n \bigr\}$ \textnormal{is the Fibonacci sequence as defined in \eqref{k = 3 in reccurence} then for any positive integer} $ n $ \textnormal{we have} 
-\begin{equation}\label{bronze ratio recursive}
-	 \mu^n + \left(-\frac{1}{\mu}\right)^n = M_{n-1} + M_{n+1}. 
+If $\bigl\{ M_n \bigr\}$ is the sequence as defined on equation \eqref{k = 3 in reccurence},  then for any positive integer $ n $, we have
+\begin{equation}\label{silver ratio recursive}
+	 \mu^n + \left(-\frac{1}{\mu}\right)^n = M_{n-1} + M_{n+1}.  \textnormal{ for } n \geq 1
 \end{equation}
 \end{theorem}
 
 \begin{proof}
-$\mu^n + \left(-\dfrac{1}{\mu}\right)^n = M_{n-1} + M_{n+1} $. for all $n \in \mathbb{N}$
+We prove by using principle of mathematical induction on $n \in \mathbb{N}.$
 
-\quad Let P($n$) : $\mu^n + \left(-\dfrac{1}{\mu}\right)^n = M_{n-1} + M_{n+1} $. 
+\quad Let $P(n):\mu^n + \left(-\dfrac{1}{\mu}\right)^n = M_{n-1} + M_{n+1}$. 
+\begin{enumerate}[label=(\roman*),leftmargin = 1.5cm]
+	\item To show  that $P(1)$ is true, that is 
+	$$\mu - \dfrac{1}{\mu} = M_{0} + M_{2}.$$ 
 
-\quad (i)\quad Show P($1$) is true 
-
-\quad \quad \quad That is $\mu -\dfrac{1}{\mu} = M_{0} + M_{2} $ 
-
-\quad \quad \quad Consider
-\begin{align*}
- 	\mu - \dfrac{1}{\mu} &= \rho_3 - \dfrac{1}{\rho_3}\\
- \end{align*}
+ From Lemma \ref{lemma} and $k=3$, we have $\rho_3 - \dfrac{1}{\rho_3} =3 .$
  
-\quad \quad \quad Since \eqref{lemma} from lemma.\quad $\rho_k-\dfrac{1}{\rho_k}=k$. Thus we obtain $\rho_3-\dfrac{1}{\rho_3}=3$.
- \begin{align*}
+ Since $ \mu = \rho_3$ and $M_0=0, M_2=3,$ then 
+  \begin{align*}
  	\mu - \dfrac{1}{\mu} &= 3\\
- 	&= o + 3\\
- 	&= M_{0} + M_{2}
+ 	&= 0 + 3\\
+ 	&= M_{0} + M_{2},
  \end{align*}
+ thus  $P(1)$  is true.
  
-\quad \quad \quad $\therefore$ P($1$) is true
- 
-\quad (ii)\quad Assume P($r-1$) and P($r$) is true
+ \item For $r \geq 1$. We assume that $P(r-1)$ and $P(r)$ are true, that is
+ \begin{equation*}
+	\mu^{r-1} + \left(-\dfrac{1}{\mu}\right)^{r-1} = M_{r-2} + M_{r} ,
+\end{equation*}
 
-\quad \quad \quad That is 
-\begin{align*}
-	\mu^{r-1} + \left(-\dfrac{1}{\mu}\right)^{r-1} &= M_{r-2} + M_{r} \quad, \\
-	\mu^{r} + \left(-\dfrac{1}{\mu}\right)^{r} &= M_{r-1} + M_{r+1}
-\end{align*}
+and
+\begin{equation*}
+	\mu^{r} + \left(-\dfrac{1}{\mu}\right)^{r} = M_{r-1} + M_{r+1},
+\end{equation*}
 
-\quad \quad \quad Show P($r+1$) is true
- 
-\quad \quad \quad That is show 
- 
-$$ \mu^{r+1} + \left(-\dfrac{1}{\mu}\right)^{r+1}= M_{r} + M_{r+2} $$
+repectively.
 
-\quad \quad \quad Consider
-\begin{align*}
-	M_{r} + M_{r+2} &= 3M_{r-1} + M_{r-2} + 3M_{r+1} + M_r \\
-	&= M_{r-2} + M_r + 3M_{r-1} + 3M_{r+1} \\ 
-	&= M_{r-2} + M_r + 3(M_{r-1} + M_{r+1}) \\
-	&= \mu^{r-1} + \left(-\dfrac{1}{\mu}\right)^{r-1} +3\left[\mu^{r} + \left(-\dfrac{1}{\mu}\right)^{r}\right] \\
-	&= \mu^{r-1} + \left(-\dfrac{1}{\mu}\right)^{r-1} +3\mu^{r} + 3\left(-\dfrac{1}{\mu}\right)^{r}\ \\
-	&= \mu^{r-1}+3\mu^{r}  + \left(-\dfrac{1}{\mu}\right)^{r-1} + 3\left(-\dfrac{1}{\mu}\right)^{r}\ \\
-	&= \mu^{r+1}(\mu^{-2} + 3\mu^{-1}) + \left(-\frac{1}{\mu}\right)^{r+1} \left[ \left(-\frac{1}{\mu}\right)^{-2} + 3\left(-\frac{1}{\mu}\right)^{-1}\right] \\
-	&= \mu^{r+1} \left(\frac{1}{\mu^2} + \frac{3}{\mu}\right) + \left(-\frac{1}{\mu}\right)^{r+1}[(-\mu^2)+3(-\mu)] \\
-	&= \mu^{r+1}\left(\frac{1+3\mu}{\mu^2}\right)+\left(-\frac{1}{\mu}\right)^{r+1}(\mu^2-3\mu)
-\end{align*}
-
-\quad \quad \quad Since $\mu$ is the root of $m^2 -3m -1 =0$. Thus $\mu^2-3\mu-1=0$.
- 
-\quad \quad \quad  We obtain $\mu^2=1+3\mu$. and $\mu^2-3\mu=1$.
- 
+To show that $P(r+1)$ is true, that is
+$$ \mu^{r+1} + \left(-\dfrac{1}{\mu}\right)^{r+1}= M_{r} + M_{r+2}. $$  
+ Consider
  \begin{align*}
- M_{r} + M_{r+2} &= \mu^{r+1}\left(\frac{\mu^2}{\mu^2}\right)+\left(-\frac{1}{\mu}\right)^{r+1} \\
- &= \mu^{r+1}+\left(-\frac{1}{\mu}\right)^{r+1}
+	M_{r} + M_{r+2} &= 3M_{r-1} + M_{r-2} + 3M_{r+1} + M_r \\
+	&= M_{r-2} + M_r + 3M_{r-1} + 3M_{r+1} \\
+	&= M_{r-2} + M_r + 3(M_{r-1} + M_{r+1}) \\
+	&= \mu^{r-1} + \left(-\dfrac{1}{\mu}\right)^{r-1} +3\left[\mu^{r} + \left(-\dfrac{1}{\mu}\right)^{r} \right]\\
+	&= \mu^{r-1} + \left(-\dfrac{1}{\mu}\right)^{r-1} +3\mu^{r} + 3\left(-\dfrac{1}{\mu}\right)^{r} \\
+	&= \mu^{r-1} + 3\mu^{r} + \left(-\dfrac{1}{\mu}\right)^{r-1} + 3\left(-\dfrac{1}{\mu}\right)^{r} \\
+%	&= \varphi^{r+1}\varphi^{-2} + \varphi^{r+1}\varphi^{-1} + \left(-\dfrac{1}{\varphi}\right)^{r+1}\left(-\dfrac{1}{\varphi}\right)^{-2} + \left(-\dfrac{1}{\varphi}\right)^{r+1}\left(-\dfrac{1}{\varphi}\right)^{-1} \\
+	&= \mu^{r+1}(\mu^{-2} + 3\mu^{-1}) + \left(-\frac{1}{\mu}\right)^{r+1} \left[ \left(-\frac{1}{\mu}\right)^{-2} + 3\left(-\frac{1}{\mu}\right)^{-1}\right] \\
+	&= \mu^{r+1} \left(\frac{1}{\mu^2} + \frac{3}{\mu}\right) + \left(-\frac{1}{\mu}\right)^{r+1}(\mu^2-3\mu) \\
+	&= \mu^{r+1} \cdot \frac{1+3\mu}{\mu^2}+\left(-\frac{1}{\mu}\right)^{r+1}(\mu^2-3\mu).
+\end{align*}
+Since $\mu$ is the root of $m^2 -3m -1 =0$, we obtain $\mu^2-3\mu-1=0$, then $\mu^2 = 3\mu + 1$, thus
+ \begin{align*}
+ M_{r} + M_{r+2} &= \mu^{r+1} \cdot \frac{1+3\mu}{3\mu+1}+\left(-\frac{1}{\mu}\right)^{r+1}(3\mu+1-3\mu)\\
+ &= \mu^{r+1}+\left(-\frac{1}{\mu}\right)^{r+1}.
  \end{align*}	
  
- \quad \quad \quad $\therefore$ P($r+1$) is true.
+ Thus $P(r+1)$ is true.
  
- \quad \quad \quad So by strong mathematical induction principle $\mu^n + \left(-\dfrac{1}{\mu}\right)^n = M_{n-1} + M_{n+1}$. 
- 
- \quad \quad \quad hold for all $n \in \mathbb{N}$.
+By principle of strong mathematical induction, we obtain 
+\begin{center}
+$\mu^n + \left(-\dfrac{1}{\mu}\right)^n = M_{n-1} + M_{n+1} $, for all $n \in \mathbb{N}$.
+\end{center}
+\end{enumerate}
 \end{proof}
 
-\begin{center}
-\subsection*{RELATION WITH RESPECT TO GENERAL METALLIC RATIO}
-\end{center}
-
-In this section, I will obtain a general result connecting terms of the metallic ratio sequence defined in \eqref{recursive metallic} and 
+Next, I will obtain a general result connecting terms of the metallic ratio sequence defined in equation \eqref{recursive metallic} and 
 \eqref{metallic ratio order k sequence}. Then the recurrence relation of general metallic ratio sequence is given by
 \begin{equation*}
 	 M_{n+2} =kM_{n+1}+M_n.
 \end{equation*}  
-From \eqref{metallic ratio order k sequence} we get a sequence whose terms are given by 
+where $M_0=0, M_1=1, M_2=k.$
+\newline
+
+From equation \eqref{metallic ratio order k sequence}, we get a sequence whose terms are given by 
 \begin{center}
 	$0,1,k,k^2 + 1,k^3 + 2k,k^4 + 3k^2 + k, k^5 + 4k^3 + k^2 + 2k, k^6 + 5k^4 +k^3 + 5k^2 + k,\ldots$ 
 \end{center}
@@ -502,80 +526,77 @@ From \eqref{metallic ratio order k sequence} we get a sequence whose terms are g
 It can be shown that (see \cite{R20}) the ratio of successive terms of this sequence approaches the metallic ratio of order $k$ given by $\rho_k = \dfrac{k+\sqrt{k^2+4}}{2}$. We 
 will now prove the following theorem.
 \begin{theorem}\label{metallic ratio theorem}
-\textnormal{If} $\bigl\{ M_n \bigr\}$ \textnormal{is the Fibonacci sequence as defined in \eqref{recursive metallic} then for any positive integer} $ n $ \textnormal{we have} 
+If $\bigl\{ M_n \bigr\}$ is the sequence as defined on equation \eqref{recursive metallic}, then for any positive integer $ n $, we have
 \begin{equation}\label{metallic ratio recursive}
-	 (\rho_k )^n + \left(-\frac{1}{\rho_k }\right)^n = M_{n-1} + M_{n+1}. 
+	 \rho_k ^n + \left(-\frac{1}{\rho_k }\right)^n = M_{n-1} + M_{n+1}. 
 \end{equation}
 \end{theorem}
 
 \begin{proof}
-$(\rho_k )^n + \left(-\dfrac{1}{\rho_k }\right)^n = M_{n-1} + M_{n+1} $. for all $n \in \mathbb{N}$
+We prove by using principle of strong mathematical induction on $n \in \mathbb{N}$
 
-\quad Let P($n$) : $(\rho_k) ^n + \left(-\dfrac{1}{\rho_k }\right)^n = M_{n-1} + M_{n+1} $. 
+\quad Let $P(n): \rho_k ^n + \left(-\dfrac{1}{\rho_k }\right)^n = M_{n-1} + M_{n+1}.$ 
+\begin{enumerate}[label=(\roman*),leftmargin = 1.5cm]
+	\item To show  that $P(1)$ is true, that is 
+	$$\rho_k - \dfrac{1}{\rho_k} = M_{0} + M_{2}.$$ 
 
-\quad (i)\quad Show P($1$) is true 
-
-\quad \quad \quad That is $\rho_k -\dfrac{1}{\rho_k} = M_{0} + M_{2} $ 
- 
-\quad \quad \quad Since \eqref{lemma} from lemma. We obtain \quad $\rho_k-\dfrac{1}{\rho_k}=k$.
-
-\quad \quad \quad Consider
-
- \begin{align*}
+ From Lemma \ref{lemma}, we have $\rho_k - \dfrac{1}{\rho_k} =k $ and $M_0=0, M_2=k,$ then 
+  \begin{align*}
  	\rho_k - \dfrac{1}{\rho_k} &= k\\
- 	&= o + k\\
- 	&= M_{0} + M_{2}
+ 	&= 0 + k\\
+ 	&= M_{0} + M_{2},
  \end{align*}
+ thus  $P(1)$  is true.
  
-\quad \quad \quad $\therefore$ P($1$) is true
- 
-\quad (ii)\quad Assume P($r-1$) and P($r$) is true
+ \item For $r \geq 1$. We assume that $P(r-1)$ and $P(r)$ are true, that is
+ \begin{equation*}
+	\rho_k^{r-1} + \left(-\dfrac{1}{\rho_k}\right)^{r-1} = M_{r-2} + M_{r}, 
+\end{equation*}
 
-\quad \quad \quad That is 
-\begin{align*}
-	(\rho_k)^{r-1} + \left(-\dfrac{1}{\rho_k}\right)^{r-1} &= M_{r-2} + M_{r} \quad, \\
-	(\rho_k)^{r} + \left(-\dfrac{1}{\rho_k}\right)^{r} &= M_{r-1} + M_{r+1}
-\end{align*}
+and
+\begin{equation*}
+	\rho_k^{r} + \left(-\dfrac{1}{\rho_k}\right)^{r} = M_{r-1} + M_{r+1},
+\end{equation*}
+	
+respectively.
 
-\quad \quad \quad Show P($r+1$) is true
- 
-\quad \quad \quad That is show 
- 
-$$ (\rho_k)^{r+1} + \left(-\dfrac{1}{\rho_k}\right)^{r+1}= M_{r} + M_{r+2} $$
-
-\quad \quad \quad Consider
-\begin{align*}
-	M_{r} + M_{r+2} &= kM_{r-1} + M_{r-2} + kM_{r+1} + M_r \\
-	&= M_{r-2} + M_r + kM_{r-1} + kM_{r+1} \\ 
-	&= M_{r-2} + M_r + k(M_{r-1} + M_{r+1}) \\
-	&= (\rho_k)^{r-1} + \left(-\dfrac{1}{\rho_k}\right)^{r-1} +k\left[(\rho_k)^{r} + \left(-\dfrac{1}{\rho_k}\right)^{r}\right] \\
-	&= (\rho_k)^{r-1} + \left(-\dfrac{1}{\rho_k}\right)^{r-1} +k(\rho_k)^{r} + k\left(-\dfrac{1}{\rho_k}\right)^{r}\ \\
-	&= (\rho_k)^{r-1}+k(\rho_k)^{r}  + \left(-\dfrac{1}{\rho_k}\right)^{r-1} + k\left(-\dfrac{1}{\rho_k}\right)^{r}\ \\
-	&= (\rho_k)^{r+1}((\rho_k)^{-2} + k(\rho_k)^{-1}) + \left(-\frac{1}{\rho_k}\right)^{r+1} \left[ \left(-\frac{1}{\rho_k}\right)^{-2} + k\left(-\frac{1}{\rho_k}\right)^{-1}\right] \\
-	&= (\rho_k)^{r+1} \left(\frac{1}{(\rho_k)^2} + \frac{k}{\rho_k}\right) + \left(-\frac{1}{\rho_k}\right)^{r+1}[(-\rho_k)^2+k(-\rho_k)] \\
-	&= (\rho_k)^{r+1}\left(\frac{1+k\rho_k}{(\rho_k)^2}\right)+\left(-\frac{1}{\rho_k}\right)^{r+1}((\rho_k)^2-k\rho_k)
-\end{align*}
-
-\quad \quad \quad Since $\rho_k$ is the root of $m^2 -km -1 =0$. 
- 
-\quad \quad \quad  We obtain $(\rho_k)^2=1+k\rho_k$. and $(\rho_k)^2-k\rho_k=1$.
- 
+To show that $P(r+1$) is true, that is
+\begin{equation*}
+	 \rho_k^{r+1} + \left(-\dfrac{1}{\rho_k}\right)^{r+1} = M_{r} + M_{r+2}.
+\end{equation*}  
+ Consider
  \begin{align*}
- M_{r} + M_{r+2} &= (\rho_k)^{r+1}\left(\dfrac{(\rho_k)^2}{(\rho_k)^2}\right)+\left(-\frac{1}{\rho_k}\right)^{r+1}\\
- &= (\rho_k)^{r+1}+\left(-\frac{1}{\rho_k}\right)^{r+1}
+	M_{r} + M_{r+2} &= kM_{r-1} + M_{r-2} + kM_{r+1} + M_r \\
+	&= M_{r-2} + M_r + kM_{r-1} + kM_{r+1} \\
+	&= M_{r-2} + M_r + k(M_{r-1} + M_{r+1}) \\
+	&= \rho_k^{r-1} + \left(-\dfrac{1}{\rho_k}\right)^{r-1} +k\left[\rho_k^{r} + \left(-\dfrac{1}{\rho_k}\right)^{r} \right]\\
+	&= \rho_k^{r-1} + \left(-\dfrac{1}{\rho_k}\right)^{r-1} +k\rho_k^{r} + k\left(-\dfrac{1}{\rho_k}\right)^{r} \\
+	&= \rho_k^{r-1} + k\rho_k^{r} + \left(-\dfrac{1}{\rho_k}\right)^{r-1} + k\left(-\dfrac{1}{\rho_k}\right)^{r} \\
+%	&= \varphi^{r+1}\varphi^{-2} + \varphi^{r+1}\varphi^{-1} + \left(-\dfrac{1}{\varphi}\right)^{r+1}\left(-\dfrac{1}{\varphi}\right)^{-2} + \left(-\dfrac{1}{\varphi}\right)^{r+1}\left(-\dfrac{1}{\varphi}\right)^{-1} \\
+	&= \rho_k^{r+1}(\rho_k^{-2} + k\rho_k^{-1}) + \left(-\frac{1}{\rho_k}\right)^{r+1} \left[ \left(-\frac{1}{\rho_k}\right)^{-2} + k\left(-\frac{1}{\rho_k}\right)^{-1}\right] \\
+	&= \rho_k^{r+1} \left(\frac{1}{\rho_k^2} + \frac{k}{\rho_k}\right) + \left(-\frac{1}{\rho_k}\right)^{r+1}(\rho_k^2-k\rho_k) \\
+	&= \rho_k^{r+1} \cdot \frac{1+k\rho_k}{\rho_k^2}+\left(-\frac{1}{\rho_k}\right)^{r+1}(\rho_k^2-k\rho_k).
+\end{align*}
+Since $\rho_k$ is the root of $m^2 -km -1 =0$, we obtain $\rho_k^2-k\rho_k-1=0$, then $\rho_k^2 = k\rho_k + 1$, thus
+ \begin{align*}
+ M_{r} + M_{r+2} &= \rho_k^{r+1} \cdot \frac{1+k\rho_k}{k\rho_k+1}+\left(-\frac{1}{\rho_k}\right)^{r+1}(k\rho_k+1-k\rho_k)\\
+ &= \rho_k^{r+1} +\left(-\frac{1}{\rho_k}\right)^{r+1}.
  \end{align*}	
  
- \quad \quad \quad $\therefore$ P($r+1$) is true.
+ Thus $P(r+1)$ is true.
  
- \quad \quad \quad So by strong mathematical induction principle $(\rho_k )^n + \left(-\frac{1}{\rho_k }\right)^n = M_{n-1} +$
- 
- \quad \quad \quad $ M_{n+1}$. hold for all $n \in \mathbb{N}$.
+By principle of strong mathematical induction, we obtain 
+\begin{center}
+$\rho_k^n + \left(-\dfrac{1}{\rho_k}\right)^n = M_{n-1} + M_{n+1} $, for all $n \in \mathbb{N}$.
+\end{center}
+\end{enumerate}
 \end{proof}
+
 
 \section{Conclusion}
 
-Introducing golden, silver and bronze ratios through general metallic ratio sequence as defined in \eqref{recursive metallic} and \eqref{metallic ratio order k sequence} 
-I had established three interesting theorems \ref{golden ratio theorem}, \ref{silver ratio theorem} and \ref{bronze ratio theorem} respectively. In section of relation with respect to the general metallic ratio, I had 
+Introducing golden, silver and bronze ratios through general metallic ratio sequence as defined in equation \eqref{recursive metallic} and \eqref{metallic ratio order k sequence} 
+I had established three interesting theorems \ref{golden ratio theorem}, \ref{silver ratio theorem} and \ref{bronze ratio theorem} respectively. I had 	
 established the same result for general metallic ratio of order $k$. It is amusing to notice that all metallic ratios 
 satisfy similar relation regarding the integral powers and alternate terms of the sequence. This result may pave 
 way for proving other similar results regarding metallic ratios.
